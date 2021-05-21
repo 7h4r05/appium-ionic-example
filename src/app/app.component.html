@@ -1,0 +1,12 @@
+<ion-app>
+  <div class="center">
+    <div class="text">
+      Sample text
+    </div>
+    <div class="picture" *ngIf="picture">
+      <img [src]="picture | safeUrl" />
+    </div>
+    <button class="camera-button" (click)="openCamera()">Open camera</button>
+    <button class="library-button" (click)="openLibrary()">Open library</button>
+  </div>
+</ion-app>
